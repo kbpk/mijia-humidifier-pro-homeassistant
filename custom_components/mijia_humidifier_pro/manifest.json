@@ -1,0 +1,12 @@
+{
+  "domain": "mijia_humidifier_pro",
+  "name": "Mijia Smart Evaporative Humidifier Pro",
+  "codeowners": ["@kbpk"],
+  "config_flow": true,
+  "documentation": "https://github.com/kbpk/mijia-humidifier-pro-homeassistant",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/kbpk/mijia-humidifier-pro-homeassistant/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

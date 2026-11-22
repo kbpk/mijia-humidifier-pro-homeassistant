@@ -1,0 +1,96 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Połącz z nawilżaczem",
+        "description": "Podaj adres IPv4 i token MiIO urządzenia.",
+        "data": {
+          "host": "Adres IPv4",
+          "token": "Token MiIO"
+        }
+      },
+      "reconfigure": {
+        "title": "Połącz z nawilżaczem",
+        "description": "Podaj adres IPv4 i token MiIO urządzenia.",
+        "data": {
+          "host": "Adres IPv4",
+          "token": "Token MiIO"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Połącz z nawilżaczem",
+        "description": "Podaj adres IPv4 i token MiIO urządzenia.",
+        "data": {
+          "host": "Adres IPv4",
+          "token": "Token MiIO"
+        }
+      }
+    },
+    "error": {
+      "invalid_host": "Podaj prawidłowy adres IPv4 urządzenia.",
+      "invalid_token_format": "Token musi mieć 32 znaki szesnastkowe.",
+      "cannot_connect": "Nawilżacz nie odpowiada na porcie UDP 54321.",
+      "no_authenticated_reply": "Brak odpowiedzi na polecenie uwierzytelnione. Sprawdź token i obsługę LAN.",
+      "invalid_auth": "Nawilżacz odrzucił uwierzytelnienie. Sprawdź token.",
+      "unsupported_model": "Obsługiwany model to xiaomi.humidifier.600ek.",
+      "invalid_response": "Nawilżacz zwrócił nieoczekiwaną odpowiedź."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "humidity": {
+        "name": "Wilgotność"
+      },
+      "drying_time": {
+        "name": "Pozostały czas suszenia"
+      },
+      "fault_code": {
+        "name": "Kod błędu"
+      }
+    },
+    "binary_sensor": {
+      "low_water": {
+        "name": "Brak wody"
+      }
+    },
+    "switch": {
+      "display": {
+        "name": "Wyświetlacz"
+      },
+      "beeper": {
+        "name": "Sygnały dźwiękowe"
+      },
+      "child_lock": {
+        "name": "Blokada rodzicielska"
+      },
+      "overwet_protection": {
+        "name": "Ochrona przed nadmierną wilgotnością"
+      }
+    },
+    "select": {
+      "display_brightness": {
+        "name": "Jasność wyświetlacza",
+        "state": {
+          "dim": "Przyciemniona",
+          "bright": "Jasna"
+        }
+      }
+    },
+    "humidifier": {
+      "humidifier": {
+        "state_attributes": {
+          "mode": {
+            "state": {
+              "air_dry": "Suszenie filtra"
+            }
+          }
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "command_failed": {
+      "message": "Nawilżacz nie potwierdził wykonania polecenia."
+    }
+  }
+}
